@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 18rem;
+  height: 10rem;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  width: 9.5rem;
+  height: 9.5rem;
+  position: absolute;
+  top: -1rem;
+  left: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+}
+
+img {
+  width: 100%;
+}
+
+.info {
+  background-color: rgb(255, 255, 255);
+  padding: 0.2rem;
+  width: 8.5rem;
+  height: 8rem;
+  list-style: none;
+  position: absolute;
+  white-space: wrap;
+  top: 0;
+  right: -1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  color: gray;
+}
+
+.info span {
+  color: black;
+  font-weight: bold;
+}
+
+.statusCharacter {
+  background-color: aqua;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+}
+
+.bgAlive {
+  background-color: #00ff55;
+}
+
+.bgDead {
+  background-color: #ff0040;
+}
+
+.bgUnknown {
+  background-color: #808080;
+}

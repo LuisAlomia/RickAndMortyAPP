@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "BenchNine", sans-serif;
+}
+
+.navBar {
+  background-color: #00ff55;
+  padding: 2rem;
+  max-width: 40rem;
+  display: flex;
+  align-items: center;
+  column-gap: 5rem;
+  position: sticky;
+  top: 0;
+  min-height: 7.5rem;
+  z-index: 10;
+}
+
+.logo {
+  margin-left: 2rem;
+  width: 3rem;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.imageBg {
+  width: 1900px;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.aside {
+  background-color: rgb(0, 255, 85);
+  min-width: 10rem;
+  max-height: 45rem;
+  position: sticky;
+  top: 8.7rem;
+}
+
+.search {
+  height: 4rem;
+  position: relative;
+}
+
+.buttonSearch {
+  background-color: rgba(255, 255, 255, 0.938);
+  height: 3rem;
+  width: 3rem;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 1rem;
+  position: absolute;
+  right: -1rem;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.cardContainer {
+  width: 80%;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.upText {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.up {
+  background-color: rgba(0, 255, 85, 0.4);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  scroll-behavior: smooth;
+}
+
+.loading {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* @media */
+
+@media (max-width: 600px) {
+  .navBar {
+    padding: 1rem;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+  }
+
+  .logo {
+    width: 2rem;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 2.8rem;
+    left: -1rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .main {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+  }
+
+  .aside {
+    background-color: rgb(0, 255, 85);
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 7.5rem;
+  }
+
+  .search {
+    height: 0;
+  }
+
+  .buttonSearch {
+    left: 1rem;
+    bottom: -13rem;
+  }
+
+  .cardContainer {
+    width: 80%;
+    margin: 18rem auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
