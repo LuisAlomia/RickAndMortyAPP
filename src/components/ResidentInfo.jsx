@@ -10,6 +10,10 @@ const ResidentInfo = ({ urlResident }) => {
   const bgDead = resident?.status === "Dead" && style.bgDead;
   const bgUnknown = resident?.status === "unknown" && style.bgUnknown;
 
+  const colorAlive = resident?.status === "Alive" && style.colorAlive;
+  const colorDead = resident?.status === "Dead" && style.colorDead;
+  const colorUnknown = resident?.status === "unknown" && style.colorUnknown;
+
   return (
     <>
       {resident && (
@@ -27,7 +31,10 @@ const ResidentInfo = ({ urlResident }) => {
               <span>Name:</span> {resident.name}
             </li>
             <li>
-              <span>Status:</span> {resident.status}
+              <span>Status:</span>{" "}
+              <p className={`${colorAlive} ${colorDead} ${colorUnknown}`}>
+                {resident.status}
+              </p>
             </li>
             <li>
               <span>Origin:</span> {resident.origin.name}

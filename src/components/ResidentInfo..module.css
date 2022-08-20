@@ -57,6 +57,21 @@ img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
 }
 
+.colorAlive {
+  color: #00ff55;
+  display: inline-block;
+}
+
+.colorDead {
+  color: #ff0040;
+  display: inline-block;
+}
+
+.colorUnknown {
+  color: #808080;
+  display: inline-block;
+}
+
 .bgAlive {
   background-color: #00ff55;
 }
